@@ -1,0 +1,5 @@
+{
+  "name": "Firebase Starter App",
+  "description": "A generic starter template with Firebase Authentication (Google Sign-in) and Firestore database integration, ready to be customized.",
+  "requestFramePermissions": []
+}

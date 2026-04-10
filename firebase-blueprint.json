@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "Item": {
+      "title": "Item",
+      "description": "A generic item created by a user.",
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The content of the item."
+        },
+        "userId": {
+          "type": "string",
+          "description": "The UID of the user who created the item."
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Timestamp of when the item was created."
+        }
+      },
+      "required": ["text", "userId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/items/{itemId}": {
+      "schema": {
+        "$ref": "#/entities/Item"
+      },
+      "description": "Collection of generic items."
+    }
+  }
+}
